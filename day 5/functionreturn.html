@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    let convertion = prompt ("Euro=a or Dollar=b");
+    let value = prompt ("number")
+
+
+      function DollarEuro (euro){
+        let res =((euro)*(0.92*100)/100);
+        return res;
+      }
+
+      function EuroDollar (dollar){
+        let res =((dollar)*(1.09*100)/100);
+        return res;
+      }
+
+      if(convertion == "a"){
+        document.write (DollarEuro (value))
+      }
+
+      else if(convertion == "b"){
+        document.write (EuroDollar (value))
+      }
+
+
+    </script>
+
+  </body>
+</html>

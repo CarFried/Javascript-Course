@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      // let value = 11;
+
+      function Primecheck (value){
+        for (let i=2; i<value;i++){
+        if (value%i==0 ){
+          return false;
+        }
+      }
+      return true;
+    }
+
+    for (let i=1; i<=100; i++){
+      if (Primecheck (i)){
+        document.write(i +"<br>");
+      }
+    }
+
+// // let count = 0;
+// // function count (n){
+// //   if(n>=1){
+// //     ++count
+// //   }
+// //
+// //   while (n<=100){
+// //     return count;
+// //   }
+//
+// }
+
+
+
+    // document.write (Primecheck(value));
+
+    //while I dont have 100 prime numbers keep trying
+
+
+    </script>
+
+  </body>
+</html>
