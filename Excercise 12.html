@@ -8,12 +8,20 @@
 
     <script type="text/javascript">
 
-      let user = 5;
+  let user = prompt("Give me a number to size your triangle.")
+
+  let times = prompt("Give me the number of triangles you want.")
+
+  user=parseInt(user);
+  times=parseInt(times);
 
 
-      for (i=user; i>=0; i--){
+  for (x=0; x<times; x++){
+          for (i=user; i>=0; i--){
           document.write ("*".repeat(user-i)+"<br>")
         }
+      }
+
 
 
 
