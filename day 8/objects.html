@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    let people = [
+      {
+        "name":"Stan",
+        "age" : "40",
+        "city": "Langley",
+      },
+
+      { "name":"Francine",
+        "age":"42",
+        "city": "Langley",
+      },
+
+      { "name":"Roger",
+        "age":"99",
+        "city": "Langley",
+      },
+    ]
+
+//print the name of the oldest person/longest name
+
+//result
+  // document.write(person [2].name)
+
+  // finding the name with a loop through the Array
+  //age is combined with the name
+  // give out the array with the highest number and print the variable name
+  //How do I loop through the whole array?
+  let oldest = people[0];
+  for(let i=0; i<people.length; i++){
+    if(oldest.age< people[i].age){
+      oldest=people[i];
+    }
+  }
+  document.write(oldest.name)
+
+  let longest = people[0];
+  for(let i=0; i<people.length; i++){
+    if(longest.name.length < people[i].name.length){
+      longest=people[i];
+    }
+  }
+  document.write(longest.name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>
