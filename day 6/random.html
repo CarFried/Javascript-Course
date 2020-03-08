@@ -22,45 +22,47 @@
         return Math.floor(Math.random() * (max + 1 - min)) + min;
     }
 
+numbers=randomized(1,50);
 
-    for (i = 0; i < 5; i++) {
-      numbers[i] = randomized(1, 50);
-        // numbers [0] > numbers [1]....
-        if (min > numbers[i]) {
-        numbers[i] = min;
-        }
-
-      document.write(numbers[i] + "," + "<br>");
-    }
+alert(numbers);
+    // for (i = 0; i < 5; i++) {
+    //   numbers[i] = randomized(1, 50);
+    //     // numbers [0] > numbers [1]....
+    //     if (min > numbers[i]) {
+    //     numbers[i] = min;
+    //     }
+    //
+    //   document.write(numbers[i] + "," + "<br>");
+    // }
 
     // alternative way with the function sort()
 
-    let numbers = [];
-
-    let min = numbers[0]
-
-    let max = numbers[1]
-
-
-    function randomized(min, max) {
-      if (max < min) {
-        return NaN;
-      }
-      return Math.floor(Math.random() * (max + 1 - min)) + min;
-    }
-
-    function sortNum(a, b) {
-      return a - b;
-
-    }
-
-    for (i = 0; i < 5; i++) {
-      numbers[i] = randomized(1, 50);
-
-    }
-    numbers.sort(sortNum);
-    document.write(numbers[i] + "," + "<br>");
-    }
+    // let numbers = [];
+    //
+    // let min = numbers[0]
+    //
+    // let max = numbers[1]
+    //
+    //
+    // function randomized(min, max) {
+    //   if (max < min) {
+    //     return NaN;
+    //   }
+    //   return Math.floor(Math.random() * (max + 1 - min)) + min;
+    // }
+    //
+    // function sortNum(a, b) {
+    //   return a - b;
+    //
+    // }
+    //
+    // for (i = 0; i < 5; i++) {
+    //   numbers[i] = randomized(1, 50);
+    //
+    // }
+    // numbers.sort(sortNum);
+    // document.write(numbers[i] + "," + "<br>");
+    // }
   </script>
 
 </body>

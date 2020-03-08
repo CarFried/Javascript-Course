@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      let value = 11;
+
+      function Primecheck (value){
+        for (let i=2; i<value;i++){
+        if (value%i==0 ){
+          return false;
+        }
+      }
+      return true;
+    }
+
+    document.write (Primecheck(value));
+
+
+    </script>
+
+  </body>
+</html>

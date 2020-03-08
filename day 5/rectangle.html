@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      let a = 2
+      let b = 2
+      let c = 3
+      let d = 3
+      let radius = 5
+
+
+      function rectanglePerimeter (a,b,c,d){
+        let res = a+b+c+d;
+        return res;
+      }
+
+      function rectangleArea (a,c){
+        let res = a*c;
+        return res;
+      }
+
+      function squarePerimeters(a){
+        let res = a*4;
+        return res;
+      }
+
+      function squareArea(a,a){
+        let res = a*a;
+        return res;
+      }
+
+      function circlePerimeter (radius){
+        let res = 2*Math.PI*radius;
+        return res;
+      }
+
+      function circleArea (radius,radius){
+        let res = radius*radius*Math.PI
+        return res;
+      }
+
+document.write (rectanglePerimeter (a,b,c,d)+"<br>");
+document.write (rectangleArea (a,c));
+document.write (squarePerimeters (a,a));
+document.write (squareArea (a,a));
+document.write (circlePerimeter (radius));
+document.write (circleArea (radius));
+
+
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

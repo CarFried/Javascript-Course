@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    let numbers =[]
+
+      function randomized(min, max) {
+        if (max < min) {
+          return NaN;
+        }
+          return Math.floor(Math.random() * (max + 1 - min)) + min;
+      }
+
+      function itExists(someNumber,someArray){
+
+        for(i=0; i<someArray.length; i++){
+
+          if(someNumber==someArray[i]){
+
+            return true;}
+
+          }
+          return false;
+        }
+
+          for (i = 0; i < 5; i++) {
+            let temp  = randomized(1, 50);
+
+              while(itExists(temp, numbers)){
+
+                temp= randomized(1, 50);
+
+            }
+              numbers[i]= temp;
+
+          }
+
+          document.write(numbers)
+
+
+
+          //push(puts things at the end of an array)
+
+
+
+      1.
+    </script>
+
+  </body>
+</html>

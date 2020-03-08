@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let numbers=[
+      [3,5,7,4],
+      [11,2,8,4],
+      [2,6,8,4],
+      [6,2,3,9]
+    ]
+
+//write the sum of each line for an array
+
+    for (let i=0; i<numbers.length; i++){
+      let result =0;
+      for (let j=0; j<numbers[i].length; j++){
+        if(j>0){
+          document.write ("+")
+        }
+        document.write (numbers[i][j]);
+        result+= numbers[i][j];
+      }
+      document.write("="+result+"<br>")
+    }
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

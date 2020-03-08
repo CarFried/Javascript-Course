@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      let first = 0
+      let second = 1
+      let res
+
+      let fibonnacci = []
+
+
+      document.write ("1:" + " "+first + "<br>")
+      document.write ("2:"+ " " +second + "<br>")
+
+      for (i=3; i<=20; i++){
+
+      res=first + second
+
+          document.write (i + ":"+res + "<br>");
+
+        first=second;
+        second=res;
+
+        fibonnacci [i]= res
+        }
+
+
+
+
+
+    </script>
+
+  </body>
+</html>
